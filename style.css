@@ -1,0 +1,66 @@
+﻿body {
+background-color: lightblue;
+}
+
+.l-header {
+grid-area: my-header;
+}
+
+.l-nav {
+grid-area: my-nav;
+}
+
+.l-main {
+grid-area: my-main;
+}
+
+.l-aside {
+grid-area: my-aside;
+}
+
+.l-section {
+grid-area: my-section;
+}
+
+.l-footer {
+grid-area: my-footer;
+}
+
+.grid {
+display: grid;
+grid-gap: 10px;
+grid-template-areas:
+"my-header my-header my-header"
+"my-nav my-main my-aside"
+"my-nav my-section my-section"
+"my-footer my-footer my-footer";
+
+max-width: 400px; /* максимальная ширина контейнера */
+margin: auto; /* центрирование контейнера на странице */
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+border: solid 4px brown;
+border-radius: 8px;
+background-color: #72ed93;
+padding: 10px
+}
+
+.box-init {
+font-family: Arial, sans-serif;	
+background-color: #5ad17a;
+padding: 15px; /* внутренние отступы */
+border-radius: 6px; /* скругление углов */
+border: solid 2px black;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #0f4503;
+transition: 0.5s;
+}
+
+.box-init:hover {
+background-color: #0f4503;
+color: #5ad17a;
+font-size: larger;
+
+}
